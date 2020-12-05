@@ -8,7 +8,6 @@ export class UserEntity extends BaseEntity {
     @Column('text')
     email: string;
 
-    // add nullable: true
-    @Column('int', {array: true})
+    @Column('int', {array: true, default: "{}"})
     trips: number[];
 }
